@@ -920,26 +920,6 @@
 
 /** @} */ // end group plugin-address-table
 
-/** @addtogroup plugin-comms-hub-function-sub-ghz Plugin Commands: Comms Hub Function (SubGhz)
- * @ingroup cli
- * 
- * @{
- */
-
-/** @brief <b>plugin comms-hub-function-sub-ghz channel-change-complete [page:1] [channel:1] </b>
- *   - <i>Complete the channel change sequence.</i>
- *     - page - INT8U - Requested new page [28-31]
- *     - channel - INT8U - Requested new channel
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ_CHANNEL_CHANGE_COMPLETE
-
-/** @brief <b>plugin comms-hub-function-sub-ghz channel-change-start </b>
- *   - <i>Initiate the channel change sequence.</i>
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ_CHANNEL_CHANGE_START
-
-/** @} */ // end group plugin-comms-hub-function-sub-ghz
-
 /** @addtogroup plugin-counters Plugin Commands: Counters
  * @ingroup cli
  * This plugin provides APIs and CLI commands for reading and manipulating
@@ -2062,14 +2042,6 @@
  */
 
 /** @} */ // end group plugin-address-table
-
-/** @addtogroup plugin-comms-hub-function-sub-ghz Plugin Commands: Comms Hub Function (SubGhz)
- * @ingroup cli
- * 
- * @{
- */
-
-/** @} */ // end group plugin-comms-hub-function-sub-ghz
 
 /** @addtogroup plugin-counters Plugin Commands: Counters
  * @ingroup cli
