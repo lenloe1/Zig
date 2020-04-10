@@ -26399,6 +26399,23 @@ bool emberAfPluginNetworkFindGetEnableScanningAllChannelsCallback(void);
 /** @} END Network Find Plugin Callbacks */
 
 
+/** @name File Descriptor Dispatch Plugin Callbacks */
+// @{
+
+/** @brief Bad File Descriptor
+ *
+ * The indicated file descriptor has been detected to be bad; for example,
+ * the file descriptor caused an EBADF error on a select() call. The file
+ * descriptor will be omitted from subsequent file descriptor polling. The
+ * application responsible for the file descriptor should take steps to
+ * recover and clean up.
+ *
+ * @param fd The bad file descriptor Ver.: always
+ */
+void emberAfPluginFileDescriptorDispatchBadFileDescriptorCallback(int fd);
+/** @} END File Descriptor Dispatch Plugin Callbacks */
+
+
 /** @name Simple Metering Client Plugin Callbacks */
 // @{
 
