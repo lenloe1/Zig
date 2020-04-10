@@ -6,7 +6,6 @@
 // will be used in the case where user defined implementations
 // of the callbacks have not been provided.
 #include "app/framework/include/af.h"
-#include "app/framework/plugin/comms-hub-function-sub-ghz/comms-hub-function-sub-ghz-types.h"
 #include "app/framework/util/util.h"    // emberAfGetPageFrom8bitEncodedChanPg()
 #include EMBER_AF_API_NETWORK_STEERING
 
@@ -1671,22 +1670,6 @@ EmberPacketAction emberAfOutgoingPacketFilterCallback(EmberZigbeePacketType pack
                                                       void* data)
 {
   return EMBER_ACCEPT_PACKET;
-}
-
-
-/** @brief Sub-GHz channel change request outcome callback
- *
- * This callback is called by the Comms Hub Function (Sub-GHz) plugin to report
- * the outcome of the channel change request.
- *
- * @param outcome  Channel change request outcome
- * @param status   Ember status code if the outcome is negative
- */
-void emberAfPluginCommsHubFunctionSubGhzChannelChangeCallback(EmberAfPluginCommsHubFunctionSubGhzChannelChangeOutcome outcome,
-                                                              EmberAfStatus status)
-{
-  emberAfAppPrintln("GBCS emberAfPluginCommsHubFunctionSubGhzChannelChangeCallback: outcome=%d",
-                    outcome);
 }
 
 /** @brief Rollover
