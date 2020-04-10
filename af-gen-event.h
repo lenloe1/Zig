@@ -11,14 +11,12 @@
 #define EMBER_AF_GENERATED_EVENT_CODE \
   EmberEventControl emberAfPriceClusterClientTickCallbackControl1; \
   EmberEventControl emberAfKeyEstablishmentClusterServerTickCallbackControl1; \
-  extern EmberEventControl emberAfPluginCommsHubFunctionSubGhzGsmeTimeOutEventControl; \
   extern EmberEventControl emberAfPluginFormAndJoinCleanupEventControl; \
   extern EmberEventControl emberAfPluginKeyEstablishmentApsDuplicateDetectionEventControl; \
   extern EmberEventControl emberAfPluginNetworkFindTickEventControl; \
   extern EmberEventControl emberAfPluginNetworkSteeringFinishSteeringEventControl; \
   extern EmberEventControl emberAfPluginScanDispatchScanEventControl; \
   extern EmberEventControl emberAfPluginUpdateTcLinkKeyBeginTcLinkKeyUpdateEventControl; \
-  extern void emberAfPluginCommsHubFunctionSubGhzGsmeTimeOutEventHandler(void); \
   extern void emberAfPluginFormAndJoinCleanupEventHandler(void); \
   extern void emberAfPluginKeyEstablishmentApsDuplicateDetectionEventHandler(void); \
   extern void emberAfPluginNetworkFindTickEventHandler(void); \
@@ -53,7 +51,6 @@
 #define EMBER_AF_GENERATED_EVENTS   \
   { &emberAfPriceClusterClientTickCallbackControl1, emberAfPriceClusterClientTickCallbackWrapperFunction1 }, \
   { &emberAfKeyEstablishmentClusterServerTickCallbackControl1, emberAfKeyEstablishmentClusterServerTickCallbackWrapperFunction1 }, \
-  { &emberAfPluginCommsHubFunctionSubGhzGsmeTimeOutEventControl, emberAfPluginCommsHubFunctionSubGhzGsmeTimeOutEventHandler }, \
   { &emberAfPluginFormAndJoinCleanupEventControl, emberAfPluginFormAndJoinCleanupEventHandler }, \
   { &emberAfPluginKeyEstablishmentApsDuplicateDetectionEventControl, emberAfPluginKeyEstablishmentApsDuplicateDetectionEventHandler }, \
   { &emberAfPluginNetworkFindTickEventControl, emberAfPluginNetworkFindTickEventHandler }, \
@@ -67,7 +64,6 @@
 #define EMBER_AF_GENERATED_EVENT_STRINGS   \
   "Price Cluster Client EP 1",  \
   "Key Establishment Cluster Server EP 1",  \
-  "Comms Hub Function (Sub-GHz) Plugin GsmeTimeOut",  \
   "Form and Join Library Plugin Cleanup",  \
   "Key Establishment Plugin ApsDuplicateDetection",  \
   "Network Find Plugin Tick",  \
