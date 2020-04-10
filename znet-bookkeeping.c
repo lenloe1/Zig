@@ -22,14 +22,12 @@ void emAfInit(void)
 void emberAfMainTickCallback(void);  // Global
 void emberAfTick(void);  // Global
 void emberAfPluginGatewayTickCallback(void);  // Plugin: gateway
-void emberAfPluginHeartbeatTickCallback(void);  // Plugin: heartbeat
 
 void emAfTick(void)
 {
   emberAfMainTickCallback();  // Global
   emberAfTick();  // Global
   emberAfPluginGatewayTickCallback();  // Plugin: gateway
-  emberAfPluginHeartbeatTickCallback();  // Plugin: heartbeat
 }
 
 void emAfResetAttributes(uint8_t endpointId)
