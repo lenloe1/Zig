@@ -183,11 +183,6 @@
 #define EMBER_AF_PLUGIN_CCM_ENCRYPTION_SOFTWARE_CCM
 #define USE_SOFTWARE_CCM
 
-// Use this macro to check if Comms Hub Function (Sub-GHz) plugin is included
-#define EMBER_AF_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ
-// User options for plugin Comms Hub Function (Sub-GHz)
-#define EMBER_AF_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ_GSME_WAKE_UP_PERIOD 30
-
 // Use this macro to check if Counters plugin is included
 #define EMBER_AF_PLUGIN_COUNTERS
 // User options for plugin Counters
