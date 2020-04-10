@@ -198,6 +198,9 @@
 // Use this macro to check if EZSP UART plugin is included
 #define EMBER_AF_PLUGIN_EZSP_UART
 
+// Use this macro to check if File Descriptor Dispatch plugin is included
+#define EMBER_AF_PLUGIN_FILE_DESCRIPTOR_DISPATCH
+
 // Use this macro to check if Form and Join Library plugin is included
 #define EMBER_AF_PLUGIN_FORM_AND_JOIN
 
