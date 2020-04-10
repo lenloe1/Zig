@@ -328,9 +328,6 @@
 #define EMBER_AF_PLUGIN_ZCL_FRAMEWORK_CORE_CLI_ENABLED
 #define ZA_CLI_FULL
 
-// Use this macro to check if Zigbee Event Logger Stub plugin is included
-#define EMBER_AF_PLUGIN_ZIGBEE_EVENT_LOGGER_STUB
-
 
 // Generated API headers
 
