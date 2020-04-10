@@ -1223,6 +1223,30 @@
 
 /** @} */ // end group plugin-price-client
 
+/** @addtogroup plugin-price-common Plugin Commands: Price Common
+ * @ingroup cli
+ * Utility functions common to both Price Client / Server.
+ * 
+ * @{
+ */
+
+/** @brief <b>plugin price-common adj-st-t [startTimeUtc:4] [durationType:1] </b>
+ *   - <i>Calculates a new UTC start time value based on the duration type parameter.</i>
+ *     - startTimeUtc - INT32U
+ *     - durationType - INT8U
+ */
+#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_PRICE_COMMON_PLUGIN_PRICE_COMMON_ADJ_ST_T
+
+/** @brief <b>plugin price-common cnvrt-durn-to-sec [startTimeUtc:4] [duration:4] [durationType:1] </b>
+ *   - <i>Converts the duration to a number of seconds based on the duration type parameter.</i>
+ *     - startTimeUtc - INT32U
+ *     - duration - INT32U
+ *     - durationType - INT8U
+ */
+#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_PRICE_COMMON_PLUGIN_PRICE_COMMON_CNVRT_DURN_TO_SEC
+
+/** @} */ // end group plugin-price-common
+
 /** @addtogroup plugin-simple-metering-client Plugin Commands: Simple Metering Client
  * @ingroup cli
  * The simple-metering-client plugin contributes CLI commands to the application
@@ -2103,6 +2127,15 @@
  */
 
 /** @} */ // end group plugin-price-client
+
+/** @addtogroup plugin-price-common Plugin Commands: Price Common
+ * @ingroup cli
+ * Utility functions common to both Price Client / Server.
+ * 
+ * @{
+ */
+
+/** @} */ // end group plugin-price-common
 
 /** @addtogroup plugin-simple-metering-client Plugin Commands: Simple Metering Client
  * @ingroup cli
