@@ -918,6 +918,32 @@ static EmberCommandEntry emberCommandPluginPriceClientTable[] = {
   emberCommandEntrySubMenu("tier-label", emberCommandPluginPriceClientTierLabelTable, ""),
   emberCommandEntryTerminator(),
 };
+void emAfPluginPriceCommonClusterGetAdjustedStartTimeCli(void);
+#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
+static const char * const pluginPriceCommonAdjStTCommandArguments[] = {
+  "start time utc",
+  "duration type",
+  NULL
+};
+#endif
+
+
+void emAfPluginPriceCommonClusterConvertDurationToSecondsCli(void);
+#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
+static const char * const pluginPriceCommonCnvrtDurnToSecCommandArguments[] = {
+  "start time utc",
+  "duration",
+  "duration type",
+  NULL
+};
+#endif
+
+
+static EmberCommandEntry emberCommandPluginPriceCommonTable[] = {
+  emberCommandEntryActionWithDetails("adj-st-t", emAfPluginPriceCommonClusterGetAdjustedStartTimeCli, "wu", "Calculates a new UTC start time value based on the duration type param ...", pluginPriceCommonAdjStTCommandArguments),
+  emberCommandEntryActionWithDetails("cnvrt-durn-to-sec", emAfPluginPriceCommonClusterConvertDurationToSecondsCli, "wwu", "Converts the duration to a number of seconds based on the duration typ ...", pluginPriceCommonCnvrtDurnToSecCommandArguments),
+  emberCommandEntryTerminator(),
+};
 void emAfPluginSimpleMeteringClientCliGetSampledData(void);
 #if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
 static const char * const pluginSimpleMeteringClientGetSampledDataCommandArguments[] = {
@@ -1022,6 +1048,7 @@ static EmberCommandEntry emberCommandPluginTable[] = {
   emberCommandEntrySubMenu("network-steering", emberCommandPluginNetworkSteeringTable, ""),
   emberCommandEntrySubMenu("partner-link-key-exchange", emberCommandPluginPartnerLinkKeyExchangeTable, ""),
   emberCommandEntrySubMenu("price-client", emberCommandPluginPriceClientTable, ""),
+  emberCommandEntrySubMenu("price-common", emberCommandPluginPriceCommonTable, ""),
   emberCommandEntrySubMenu("simple-metering-client", emberCommandPluginSimpleMeteringClientTable, ""),
   emberCommandEntrySubMenu("smart-energy-registration", emberCommandPluginSmartEnergyRegistrationTable, ""),
   emberCommandEntrySubMenu("update-tc-link-key", emberCommandPluginUpdateTcLinkKeyTable, ""),
