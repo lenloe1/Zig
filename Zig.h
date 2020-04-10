@@ -287,6 +287,9 @@
 #define EMBER_AF_PLUGIN_PRICE_CLIENT_MAX_NUMBER_BLOCK_THRESHOLDS 4
 #define EMBER_AF_PLUGIN_PRICE_CLIENT_MAX_NUMBER_TIERS 5
 
+// Use this macro to check if Price Common plugin is included
+#define EMBER_AF_PLUGIN_PRICE_COMMON
+
 // Use this macro to check if Scan Dispatch plugin is included
 #define EMBER_AF_PLUGIN_SCAN_DISPATCH
 // User options for plugin Scan Dispatch
