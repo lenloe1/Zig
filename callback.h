@@ -16,7 +16,6 @@
 
 
 #include "app/framework/include/af-types.h"
-#include "app/framework/plugin/comms-hub-function-sub-ghz/comms-hub-function-sub-ghz-types.h"
 #include "app/framework/util/util.h"    // emberAfGetPageFrom8bitEncodedChanPg()
 #include EMBER_AF_API_NETWORK_STEERING
 
@@ -26593,22 +26592,6 @@ EmberNodeType emberAfPluginNetworkSteeringGetNodeTypeCallback(EmberAfPluginNetwo
  */
 void emberAfPluginCountersRolloverCallback(EmberCounterType type);
 /** @} END Counters Plugin Callbacks */
-
-
-/** @name Comms Hub Function (Sub-GHz) Plugin Callbacks */
-// @{
-
-/** @brief Sub-GHz channel change request outcome callback
- *
- * This callback is called by the Comms Hub Function (Sub-GHz) plugin to report
- * the outcome of the channel change request.
- *
- * @param outcome  Channel change request outcome
- * @param status   Ember status code if the outcome is negative
- */
-void emberAfPluginCommsHubFunctionSubGhzChannelChangeCallback(EmberAfPluginCommsHubFunctionSubGhzChannelChangeOutcome outcome,
-                                                              EmberAfStatus status);
-/** @} END Comms Hub Function (Sub-GHz) Plugin Callbacks */
 
 
 /** @name EZSP Common Plugin Callbacks */
