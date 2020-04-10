@@ -518,22 +518,6 @@ static EmberCommandEntry emberCommandPluginAddressTableTable[] = {
   emberCommandEntryActionWithDetails("set", emberAfPluginAddressTableSetCommand, "ubv", "Set an entry in the address table according to the arguments specified", pluginAddressTableSetCommandArguments),
   emberCommandEntryTerminator(),
 };
-void emAfPluginCommsHubFunctionSubGhzCliChannelChangeComplete(void);
-#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
-static const char * const pluginCommsHubFunctionSubGhzChannelChangeCompleteCommandArguments[] = {
-  "Requested new page [28-31]",
-  "Requested new channel",
-  NULL
-};
-#endif
-
-
-void emAfPluginCommsHubFunctionSubGhzCliChannelChangeStart(void);
-static EmberCommandEntry emberCommandPluginCommsHubFunctionSubGhzTable[] = {
-  emberCommandEntryActionWithDetails("channel-change-complete", emAfPluginCommsHubFunctionSubGhzCliChannelChangeComplete, "uu", "Complete the channel change sequence.", pluginCommsHubFunctionSubGhzChannelChangeCompleteCommandArguments),
-  emberCommandEntryActionWithDetails("channel-change-start", emAfPluginCommsHubFunctionSubGhzCliChannelChangeStart, "", "Initiate the channel change sequence.", NULL),
-  emberCommandEntryTerminator(),
-};
 void emberAfPluginCounterPrintCounterTypeCommand(void);
 #if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
 static const char * const pluginCounterPrintCounterTypeCommandArguments[] = {
@@ -1031,7 +1015,6 @@ static EmberCommandEntry emberCommandPluginUpdateTcLinkKeyTable[] = {
 };
 static EmberCommandEntry emberCommandPluginTable[] = {
   emberCommandEntrySubMenu("address-table", emberCommandPluginAddressTableTable, ""),
-  emberCommandEntrySubMenu("comms-hub-function-sub-ghz", emberCommandPluginCommsHubFunctionSubGhzTable, ""),
   emberCommandEntrySubMenu("counter", emberCommandPluginCounterTable, ""),
   emberCommandEntrySubMenu("counters", emberCommandPluginCountersTable, ""),
   emberCommandEntrySubMenu("gateway", emberCommandPluginGatewayTable, ""),
