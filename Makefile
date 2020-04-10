@@ -221,7 +221,6 @@ APPLICATION_FILES= \
   ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/framework/util/util.c \
   ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/framework/util/af-main-host.c \
   ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/framework/util/service-discovery-host.c \
-  ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/framework/plugin/zigbee-event-logger-stub/zigbee-event-logger-stub-gen.c \
   ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/platform/base/hal/micro/generic/aes/rijndael-alg-fst.c \
   ../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/platform/base/hal/micro/generic/aes/rijndael-api-fst.c \
 
