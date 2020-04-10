@@ -1672,6 +1672,16 @@ EmberPacketAction emberAfOutgoingPacketFilterCallback(EmberZigbeePacketType pack
   return EMBER_ACCEPT_PACKET;
 }
 
+/** @brief Rollover
+ *
+ * This function is called every time a counter exceeds its threshold.
+ *
+ * @param type The counter that rolled over Ver.: always
+ */
+void emberAfPluginCountersRolloverCallback(EmberCounterType type)
+{
+}
+
 /** @brief Select File Descriptors
  *
  * This function is called when the Gateway plugin will do a select() call to
