@@ -1682,6 +1682,20 @@ void emberAfPluginCountersRolloverCallback(EmberCounterType type)
 {
 }
 
+/** @brief Bad File Descriptor
+ *
+ * The indicated file descriptor has been detected to be bad; for example,
+ * the file descriptor caused an EBADF error on a select() call. The file
+ * descriptor will be omitted from subsequent file descriptor polling. The
+ * application responsible for the file descriptor should take steps to
+ * recover and clean up.
+ *
+ * @param fd The bad file descriptor Ver.: always
+ */
+void emberAfPluginFileDescriptorDispatchBadFileDescriptorCallback(int fd)
+{
+}
+
 /** @brief Select File Descriptors
  *
  * This function is called when the Gateway plugin will do a select() call to
