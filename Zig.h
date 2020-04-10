@@ -208,15 +208,13 @@
 #define EMBER_AF_PLUGIN_GATEWAY_TCP_PORT_OFFSET 4900
 #define EMBER_AF_PLUGIN_GATEWAY_MAX_WAIT_FOR_EVENT_TIMEOUT_MS 0xFFFFFFFF
 
-// Use this macro to check if Heartbeat plugin is included
-#define EMBER_AF_PLUGIN_HEARTBEAT
-// User options for plugin Heartbeat
-#define EMBER_AF_PLUGIN_HEARTBEAT_PERIOD_QS 1
-
 // Use this macro to check if Key Establishment plugin is included
 #define EMBER_AF_PLUGIN_KEY_ESTABLISHMENT
 // User options for plugin Key Establishment
 #define EMBER_AF_PLUGIN_KEY_ESTABLISHMENT_SE_VERSION 1_0_AND_1_1
+
+// Use this macro to check if Linked List plugin is included
+#define EMBER_AF_PLUGIN_LINKED_LIST
 
 // Use this macro to check if NCP Configuration plugin is included
 #define EMBER_AF_PLUGIN_NCP_CONFIGURATION
@@ -312,12 +310,6 @@
 #define EMBER_AF_PLUGIN_SMART_ENERGY_REGISTRATION_ESI_DISCOVERY_PERIOD 3
 #define EMBER_AF_PLUGIN_SMART_ENERGY_REGISTRATION_ALLOW_NON_ESI_TIME_SERVERS
 
-// Use this macro to check if Strong Random plugin is included
-#define EMBER_AF_PLUGIN_STRONG_RANDOM
-// User options for plugin Strong Random
-#define EMBER_AF_PLUGIN_STRONG_RANDOM_MBEDTLS_TRNG
-#define USE_MBEDTLS_API_FOR_TRNG
-
 // Use this macro to check if Unix Library plugin is included
 #define EMBER_AF_PLUGIN_UNIX_LIBRARY
 // User options for plugin Unix Library
@@ -336,6 +328,9 @@
 #define EMBER_AF_PLUGIN_ZCL_FRAMEWORK_CORE_CLI_ENABLED
 #define ZA_CLI_FULL
 
+// Use this macro to check if Zigbee Event Logger Stub plugin is included
+#define EMBER_AF_PLUGIN_ZIGBEE_EVENT_LOGGER_STUB
+
 
 // Generated API headers
 
@@ -344,6 +339,9 @@
 
 // API ezsp from EZSP Common plugin
 #define EMBER_AF_API_EZSP "../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/util/ezsp/ezsp.h"
+
+// API linked-list from Linked List plugin
+#define EMBER_AF_API_LINKED_LIST "../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/util/plugin/plugin-common/linked-list/linked-list.h"
 
 // API network-steering from Network Steering plugin
 #define EMBER_AF_API_NETWORK_STEERING "../../../../../SiliconLabs/SimplicityStudio/v4_3/developer/sdks/gecko_sdk_suite/v2.7/protocol/zigbee/app/framework/plugin/network-steering/network-steering.h"
